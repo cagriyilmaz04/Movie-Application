@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/trendFragment"
+        android:title="@string/ana_sayfa"
+        android:icon="@drawable/anasayfa">
+    </item>
+    <item
+        android:id="@+id/searchFragment"
+        android:title="@string/search"
+        android:icon="@drawable/ic_baseline_search_24">
+    </item>
+
+</menu>

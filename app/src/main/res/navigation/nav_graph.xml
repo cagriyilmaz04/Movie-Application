@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/trendFragment">
+
+    <fragment
+        android:id="@+id/trendFragment"
+        android:name="com.example.movie.view.TrendFragment"
+        android:label="Trendler"
+        tools:layout="@layout/fragment_trend" >
+        <action
+            android:id="@+id/action_trendFragment_to_secondFragment"
+            app:destination="@id/secondFragment" />
+        <action
+            android:id="@+id/action_trendFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+        <action
+            android:id="@+id/action_trendFragment_to_searchFragment"
+            app:destination="@id/searchFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/secondFragment"
+        android:name="com.example.movie.view.FavoriteFragment"
+        android:label="Second Fragment"
+        tools:layout="@layout/fragment_favorite" />
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.example.movie.view.DetailFragment"
+        android:label="Detay Fragment"
+        tools:layout="@layout/fragment_detail" >
+        <argument
+            android:name="datas"
+            app:argType="com.example.movie.model.DetailFragmentModel"
+            app:nullable="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.example.movie.view.SearchFragment"
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_search" >
+        <action
+            android:id="@+id/action_searchFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+        <action
+            android:id="@+id/action_searchFragment_to_detailPersonFragment"
+            app:destination="@id/detailPersonFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailPersonFragment"
+        android:name="com.example.movie.DetailPersonFragment"
+        android:label="fragment_detail_person"
+        tools:layout="@layout/fragment_detail_person" >
+        <argument
+            android:name="parcel_class"
+            app:argType="com.example.movie.model.parcelableClass"
+            app:nullable="true" />
+        <action
+            android:id="@+id/action_detailPersonFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
+</navigation>

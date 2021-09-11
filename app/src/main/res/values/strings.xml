@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">Movie</string>
+    <string name="title_text_detail">Title: </string>
+    <string name="title_text_detail_tr">Film Adı: </string>
+    <string name="released_time_text_detail_fragment">Released Time: </string>
+    <string name="released_time_text_detail_fragment_tr">Çıkış Tarihi: </string>
+    <string name="imdb">IMDB: </string>
+    <string name="first_release">First Air Date: </string>
+    <string name="first_release_tr">İlk Çıkış Tarihi: </string>
+    <string name="original_name">Original Name: </string>
+    <string name="original_name_tr">Dizinin Adı: </string>
+    <string name="overview">Overview</string>
+    <string name="overview_tr">Detayları</string>
+    <string name="ara">Ara</string>
+    <string name="aramak_istediiginiz">Aramak İstediğinizi Girin</string>
+    <string name="search">Arama</string>
+    <string name="favoriler">Favoriler</string>
+    <string name="ana_sayfa">Ana Sayfa</string>
+    <string name="oyuncunun_ad">Oyuncunun Adı: </string>
+    <string name="oyuncunun_ad_eng">Actor Name: </string>
+    <string name="yer_ald_dizi_ve_filmler">Yer Aldığı Dizi ve Filmler</string>
+    <string name="yer_aldigi_dizi_ve_filmler_eng">Known For</string>
+    <string name="favorilere_eklendi_tr">Favorilere Eklendi</string>
+    <string-array name="type">
+        <item>Tür</item>
+        <item>Film (Movie)</item>
+        <item>TV</item>
+        <item>Kişi (Person)</item>
+    </string-array>
+    <string-array name="dili_sec">
+        <item>Dil</item>
+        <item>Türkçe (Turish)</item>
+        <item>English (İngilizce)</item>
+    </string-array>
+    <string-array name="time">
+        <item>Zaman</item>
+        <item>Gün (Day)</item>
+        <item>Hafta (Week)</item>
+    </string-array>
+    <string-array name="filter1">
+        <item>Birini Seçiniz</item>
+        <item>TV</item>
+        <item>Person</item>
+        <item>Movie</item>
+    </string-array>
+</resources>
